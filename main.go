@@ -1,4 +1,4 @@
-package main2
+package main
 
 import (
 	"io/ioutil"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func main2() {
 	resp, _ := http.Get("http://www.oreilly.co.jp/catalog/soon.xml")
 	body, _ := ioutil.ReadAll(resp.Body)
 	log.Print(string(body))
